@@ -1,0 +1,45 @@
+.cus_size {
+    height: 800px;
+    border: 1px solid black;
+}
+
+.st_table {
+    border: 1px solid blue;
+}
+
+.st_table caption {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.st_table thead :nth-child(4) {
+    width: 300px;
+}
+
+.st_table td {
+    border: 1px solid green;
+}
+
+.st_table th {
+    border: 1px solid red;
+}
+
+.st_table tbody tr :nth-child(4) {
+    text-align: center;
+}
+
+.st_form {
+    width: 50%;
+}
+
+.st_form br+label {
+    float: left;
+    width: 20%;
+    text-align: right;
+}
+
+
+.st_form input[type=submit]{
+    margin-left: 25%;
+}
+
