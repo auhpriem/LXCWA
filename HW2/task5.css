@@ -1,0 +1,145 @@
+
+body, html {
+    margin:0 auto;
+    padding:0;
+
+    width: 100%;
+    height: 700px;
+}
+
+.row {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    width: 100%;
+    overflow: hidden;
+}
+
+body div>div {
+    overflow: hidden;
+    margin: 1%;
+    float: left;
+}
+
+#row1{
+    height: 100px;
+}
+
+#row2{
+    height: 400px;
+}
+
+#row3{
+    height: 200px;
+}
+
+.bl1 {
+    height: 100px;
+    width: 34%;
+    background-color: red;
+}
+
+.bl2 {
+    height: 100px;
+    width: 62%;
+    background-color: orange;
+}
+
+.bl3 {
+    height: 400px;
+    width: 98%;
+    background-color: greenyellow;
+}
+
+.bl4 {
+    height: 200px;
+    width: 31.3%;
+    background-color: burlywood;
+}
+
+.bl5 {
+    height: 200px;
+    width: 31.3%;
+    background-color: blue;
+}
+
+.bl6 {
+    height: 200px;
+    width: 31.3%;
+    background-color: violet;
+}
+
+/* iphone */
+@media only screen and (min-width : 414px) and (max-width : 812px){ 
+
+    #row1{
+        height: 100px;
+    }
+    
+    #row2{
+        height: 100px;
+    }
+    
+    #row3{
+        height: 300px;
+    }
+    
+    .bl1 {
+        height: 100px;
+        width: 98%;
+        background-color: greenyellow;
+    }
+    
+    .bl2 {
+        display: none;        
+    }
+    
+    .bl3 {
+        height: 100px;
+        width: 98%;
+        background-color: violet;
+    }
+    
+    .bl4 {
+        height: 400px;
+        width: 98%;
+        background-color: red;
+    }
+    
+    .bl5 {
+        display: none;   
+    }
+    
+    .bl6 {
+        display: none;   
+    }
+}
+
+/* ipad */
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+
+    .bl1 {
+        background-color: orange;
+    }
+    
+    .bl2 {
+        background-color: violet;
+    }
+    
+    .bl3 {
+        background-color: red;
+    }
+    
+    .bl4 {
+        display: none;
+    }
+    
+    .bl5 {
+        background-color: greenyellow;
+        width: 485%;
+    }
+    
+    .bl6 {
+        width: 48%;
+        background-color: blue;
+    }
+}

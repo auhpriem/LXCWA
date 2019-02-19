@@ -1,0 +1,26 @@
+.container {
+    width: 100%;
+}
+
+.img_c {
+    height: 340px;
+    width: 19.5%;
+}
+
+
+@media only screen and (min-width : 1920px) and (min-height : 1080px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width : 1280px) and (max-width : 1920px)  and (min-height : 1024px)  {
+    .container img:nth-child(n+9) {
+        width: 49.5%;
+        height: 700px;
+    }
+    .img_c{
+        height: 450px;
+        width: 24.5%;
+    }
+}

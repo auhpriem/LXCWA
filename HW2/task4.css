@@ -1,0 +1,35 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 900px;
+    padding: 1%;
+}
+
+.header {
+    width: 100%;
+    height: 10%;
+    background-color: blanchedalmond;
+    position: fixed;
+    opacity: 0.5;
+}
+.header:hover {
+    background-color: burlywood;
+}
+
+.main{
+    margin: 15% 0 50px 0;
+    border-style:  none groove;
+    background-color: aqua;
+}
+.footer {
+    width: 100%;
+    height: 15%;
+    background-color:rgba(255,0,255,0.5);
+}
+.footer:hover {
+    background-color:rgba(255,255,255,1);
+}

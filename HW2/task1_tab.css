@@ -1,0 +1,64 @@
+body, html, .main_table {
+    margin:0 auto;
+    padding:0;
+
+    width: 100%;
+    height: 700px;
+}
+
+
+.main_table tr {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.main_table tr:nth-child(1) {
+    height: 40px;
+}
+
+.main_table tr:nth-child(1) td {
+    margin: 1%;
+    width: 47.6%;
+    height: 40px;
+    background-color: orange;
+    overflow: hidden;
+    float: left;
+}
+
+.main_table tr:nth-child(2){
+    height: 260px;
+}
+.main_table tr:nth-child(2) td{
+    height: 260px;
+    width: 97.5%;
+    margin: 1%;
+    background-color: greenyellow;
+    overflow: hidden;
+    float: left;
+}
+
+.main_table tr:nth-child(3){
+    height: 200px;
+}
+.main_table tr:nth-child(3) td{
+    margin: 1%;
+    width: 31%;
+    height: 200px;
+    background-color: blue;
+    overflow: hidden;
+    float: left;
+}
+
+.main_table tr:nth-child(4){
+    height: 100px;
+}
+.main_table tr:nth-child(4) td{
+    margin: 1%;
+    width: 22.7%;
+    height: 100px;
+    background-color: gray;
+    overflow: hidden;
+    float: left;
+}
