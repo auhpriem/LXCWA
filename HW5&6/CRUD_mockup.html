@@ -7,54 +7,62 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <script src="model.js"></script>
+    <script src="crud_operations.js"></script>
     <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
 </head>
 
 <body>
     <div class="container">
         <form id="mainForm" action="#" method="post">
             <div class="form-group">
+                <label for="uid">ID</label>
+                <input class="form-control" type="text" id="uid" placeholder="Select Row" name="uid" disabled>
+            </div>
+            <div class="form-group">
                 <label for="typeOfContribution">Type Of Contribution</label>
                 <select class="form-control" id="typeOfContribution" name="typeOfContribution">
-                  <option>savings</option>
-                  <option>current</option>
+                    <option>savings</option>
+                    <option>current</option>
                 </select>
-              </div>
+            </div>
             <div class="form-group">
                 <label for="number">Account Number</label>
-                <input class="form-control" type="number" id="number" placeholder="Enter Number" name="number" >
+                <input class="form-control" type="number" id="number" placeholder="Enter Number" name="number">
             </div>
             <div class="form-group">
                 <label for="PIN">PIN</label>
-                <input class="form-control" type="password" id="PIN" placeholder="Enter PIN" name="PIN" >
+                <input class="form-control" type="password" id="PIN" placeholder="Enter PIN" name="PIN">
             </div>
             <div class="form-group">
                 <label for="balance">Balance</label>
-                <input class="form-control" type="number" id="balance" placeholder="Enter Balance" name="balance" >
+                <input class="form-control" type="number" id="balance" placeholder="Enter Balance" name="balance">
             </div>
             <div class="form-group">
                 <label for="DateOfAccountCreation">Date Of Account Creation</label>
-                <input class="form-control" type="date" id="DateOfAccountCreation" placeholder="Date Of Account Creation" name="DateOfAccountCreation" >
+                <input class="form-control" type="date" id="DateOfAccountCreation" placeholder="Date Of Account Creation"
+                    name="DateOfAccountCreation">
             </div>
             <div class="form-group">
                 <label for="user">User</label>
-                <input class="form-control" type="text" id="user" placeholder="Enter User" name="user" >
+                <input class="form-control" type="text" id="user" placeholder="Enter User" name="user">
             </div>
             <div class="form-group">
                 <label for="userType">User Type</label>
-                <input class="form-control" type="text" id="userType" placeholder="Enter User Type" name="userType" >
+                <input class="form-control" type="text" id="userType" placeholder="Enter User Type" name="userType">
             </div>
             <div class="d-flex justify-content-between">
                 <button type="submit" id="add" name="add" class="btn btn-primary">Add</button>
                 <button type="submit" id="upd" name="upd" class="btn btn-primary">Update</button>
                 <button type="submit" id="del" name="del" class="btn btn-primary">Delete</button>
+                <button type="submit" id="clr" name="clr" class="btn btn-primary">Clear</button>
             </div>
         </form>
         <pre id="output"></pre>
         </br>
         </br>
         </br>
-        <table class="table table-sm">
+        <table class="table table-sm" id="TResult">
             <thead>
                 <tr>
                     <th scope="col">#</th>
@@ -65,32 +73,10 @@
                     <th scope="col">Date Of Account Creation</th>
                     <th scope="col">User</th>
                     <th scope="col">User Type</th>
-                    <th scope="col">Account History</th>
                 </tr>
             </thead>
-            <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>1274323113546</td>
-                    <td>current</td>
-                    <td>7777</td>
-                    <td>124</td>
-                    <td>01.01.2000</td>
-                    <td>auhpriem</td>
-                    <td>my type</td>
-                    <td>-</td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>124534657743</td>
-                    <td>savings</td>
-                    <td>6666</td>
-                    <td>124</td>
-                    <td>01.01.2000</td>
-                    <td>auhpriem</td>
-                    <td>my type</td>
-                    <td>-</td>
-                </tr>
+            <tbody id="TBody">
+                <!-- CONTENT -->
             </tbody>
         </table>
     </div>
