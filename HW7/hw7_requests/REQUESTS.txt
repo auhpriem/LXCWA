@@ -1,0 +1,12 @@
+  https://services.odata.org/V4/TripPinServiceRW/People
+  https://services.odata.org/V4/(S(qnaoqzz5suyjvrpxys4vces5))/TripPinServiceRW/People/$count ////
+  https://services.odata.org/V4/TripPinServiceRW/People?$expand=Friends
+  https://services.odata.org/V4/TripPinServiceRW/People?$orderby=UserName
+  https://services.odata.org/V4/TripPinServiceRW/People?$search=Russel
+  https://services.odata.org/V4/TripPinServiceRW/People?$select=FirstName,LastName
+  https://services.odata.org/V4/(S(2gx1lfmjap0g25nod4omgqxg))/TripPinServiceRW/People?$skip=18&$select=FirstName,LastName
+  https://services.odata.org/V4/(S(2gx1lfmjap0g25nod4omgqxg))/TripPinServiceRW/People?$top=1&$select=FirstName,LastName
+  https://services.odata.org/V4/(S(2gx1lfmjap0g25nod4omgqxg))/TripPinServiceRW/People?filter=Gender eq 'Male'
+  https://services.odata.org/V4/(S(2gx1lfmjap0g25nod4omgqxg))/TripPinServiceRW/People?$filter=length(FirstName) lt 5
+  https://services.odata.org/V4/(S(2gx1lfmjap0g25nod4omgqxg))/TripPinServiceRW/People?$filter=startswith(UserName, 'r') and length(FirstName) lt 5 and length(LastName) gt 8
+  https://services.odata.org/V4/(S(2gx1lfmjap0g25nod4omgqxg))/TripPinServiceRW/People?$skip=18&$top=1&$select=FirstName,LastName
